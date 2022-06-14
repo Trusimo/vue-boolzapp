@@ -19,17 +19,47 @@
     margin-right: auto; 
 }
 
+.flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
 }
 
+.bg-grey {
+    background-color: #eaeaea;
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .chat {
     background-image: url(../img/mine.jpg);
-    height: 100%;
+    flex-grow: 1;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.font-small {
+    font-size: 10px;
+}
+
+.profile-img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.message-bar {
+    width: 400px;
+    border: none;
+    margin: 5px 0;
 }
