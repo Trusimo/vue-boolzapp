@@ -58,6 +58,9 @@
 .chat {
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
 }
 
 .navbar {
@@ -109,4 +112,18 @@
 
 .contact-list {
     padding: 10px;
+}
+
+.msg-sent {
+    background-color: #d5f9ba;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.msg-rec {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
 }
