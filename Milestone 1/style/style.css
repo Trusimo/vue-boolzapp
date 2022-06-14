@@ -20,12 +20,12 @@
 }
 
 .heighthund {
-    height: 100%;
+    height: calc(100vh - 60px);
 }
 
 .flex {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -34,14 +34,18 @@
     flex-direction: column;
 }
 
-.bg-grey {
-    background-color: #eaeaea;
-}
-
 .flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.bg-grey {
+    background-color: #eaeaea;
+}
+
+.bg-lightblue {
+    background-color: #8edafc;
 }
 
 .chat {
