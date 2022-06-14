@@ -19,8 +19,8 @@
                     <div class="row heighthund">
 
                         <!-- COLONNA DI SINISTRA -->
-                        <div class="col flex-column">
-                            <div class="flex-between navbar bg-grey">
+                        <div class="col flex-column padding-0">
+                            <div class="flex-between navbar bg-grey padding-bar">
                                 <div class="flex">
                                     <div>
                                         <img class="profile-img" src="img/avatar_io.jpg" alt="">
@@ -36,14 +36,32 @@
                                 </div>
                             </div>
 
-                            <div class="navbar bg-lightblue">
-
+                            <div class="bg-lightblue flex">
+                                <div class="bg-bell">
+                                    <i class="fa-solid fa-bell-slash fa-2x"></i>
+                                </div>
+                                <div>
+                                    <div class="font-mid">
+                                        Ricevi notifiche di nuovi messaggi
+                                    </div>
+                                    <div class="font-small text-under">
+                                        Attiva notifiche desktop
+                                    </div>
+                                </div>
                             </div>
+                            
+                            <input class="research-bar" type="text" placeholder="Cerca o inizia una nuova chat">
+
+                            <img class="contact list" v-for="item in users" :src="users.img">
+                            <div class="contact-list" v-for="item in users">
+                                {{item.name}}
+                            </div>
+
                         </div>
 
                         <!-- COLONNA DI DESTRA -->
-                        <div class="col flex-column bg-grey">
-                            <div class="flex-between navbar">
+                        <div class="col flex-column bg-grey padding-0">
+                            <div class="flex-between navbar padding-bar">
                                 <div class="flex">
                                     <div class="img-chat">
                                         <img class="profile-img" src="img/avatar_1.jpg" alt="">
@@ -64,9 +82,9 @@
                                 </div>
                             </div>
                             <div class="chat">
-                                PLACEHOLDER
+                                
                             </div>
-                            <div class="message flex-between">
+                            <div class="flex-between padding-bar">
                                 <div><i class="fa-solid fa-face-smile"></i></div>
                                 <input type="text" class="message-bar" placeholder="Scrivi un messaggio">
                                 <div><i class="fa-solid fa-microphone"></i></div>
