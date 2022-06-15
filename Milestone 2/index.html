@@ -52,7 +52,8 @@
                             
                             <input class="research-bar" type="text" placeholder="Cerca o inizia una nuova chat">
 
-                            <div class="contact-list" v-for="item in contacts" @click="changechat">
+                            <div class="contact-list" v-for="item in users">
+                                <img :src="item.img" alt="" class="profile-img">
                                 {{item.name}}
                             </div>
 
