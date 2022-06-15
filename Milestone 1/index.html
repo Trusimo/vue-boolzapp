@@ -53,7 +53,7 @@
                             <input class="research-bar" type="text" placeholder="Cerca o inizia una nuova chat">
 
                             <div class="contact-list" v-for="item in users">
-                                <img :src="`..img/avatar$(users.img).jpg`" alt="">
+                                <img :src="users.img" alt="">
                                 {{item.name}}
                             </div>
 
