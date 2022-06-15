@@ -170,6 +170,8 @@ const appVue = new Vue({
 },
 
 	methods: {
-
+        changechat: function () {
+            
+        }
 	}
 });
