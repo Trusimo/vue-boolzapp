@@ -112,6 +112,7 @@
 
 .contact-list {
     padding: 10px;
+    overflow: auto;
 }
 
 .msg-sent {
