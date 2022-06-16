@@ -81,7 +81,8 @@
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </div>
                             </div>
-                            <div class="chat font-mid" v-for="message in activeUser.messages">
+                            <div class="chat font-mid" v-for="message in activeUser.messages"
+                            :class="{'msg-sent': message.status==='sent'}">
                                 {{message.message}}
                                 <!-- <div class="row">
                                     <div class="col-6"></div>
