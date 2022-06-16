@@ -81,8 +81,9 @@
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </div>
                             </div>
-                            <div class="chat font-mid">
-                                <div class="row">
+                            <div class="chat font-mid" v-for="message in activeUser.messages">
+                                {{message.message}}
+                                <!-- <div class="row">
                                     <div class="col-6"></div>
                                     <div class="col-6 msg-sent">
                                         Hai portato a spasso il cane?
@@ -97,7 +98,7 @@
                                 <div class="row">
                                     <div class="col-6 msg-rec">Tutto fatto!</div>
                                     <div class="col-6"></div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="flex-between padding-bar">
                                 <div><i class="fa-solid fa-face-smile"></i></div>
