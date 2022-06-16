@@ -183,6 +183,14 @@ const appVue = new Vue({
                 status: "sent"
             }
             this.activeUser.messages.push(newObjMsg)
+            let newObjAns = {
+                date: "",
+                message: "Ok",
+                status: "received"
+            }
+            setTimeout(function () {
+                this.activeUser.messages.push(newObjAns)
+            }, 1000)
         }
 	}
 });
