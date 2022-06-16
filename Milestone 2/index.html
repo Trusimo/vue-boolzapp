@@ -52,9 +52,9 @@
                             
                             <input class="research-bar" type="text" placeholder="Cerca o inizia una nuova chat">
 
-                            <div class="contact-list" v-for="item in users">
-                                <img :src="item.img" alt="" class="profile-img">
-                                {{item.name}}
+                            <div class="contact-list" v-for="contact in users" @click="changechat">
+                                <img :src="contact.img" alt="" class="profile-img">
+                                {{contact.name}}
                             </div>
 
                         </div>
@@ -84,8 +84,7 @@
                             <div class="chat font-mid">
                                 <div class="row">
                                     <div class="col-6"></div>
-                                    <div class="col-6 msg-sent" v-for="item in users">
-                                        {{item.messages}}
+                                    <div class="col-6 msg-sent">
                                         Hai portato a spasso il cane?
                                     </div>
                                 </div>
