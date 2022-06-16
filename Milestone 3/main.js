@@ -169,15 +169,20 @@ const appVue = new Vue({
     data: {
         users: contatti,
         activeUser: contatti [0],
-        myMsg: "MyMsg"
+        myMsg: ""
 },
 
 	methods: {
         changechat (contact) {
             this.activeUser = contact;
         },
-        addMyMsg (myMsg) {
-            this.message.push(myMsg)
+        addMyMsg () {
+            let newObjMsg = {
+                date:"", 
+                message: this.myMsg,
+                status: "sent"
+            }
+            this.activeUser.messages.push(newObjMsg)
         }
 	}
 });
