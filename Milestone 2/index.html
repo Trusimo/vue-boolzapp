@@ -81,25 +81,12 @@
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </div>
                             </div>
-                            <div class="chat font-mid" v-for="message in activeUser.messages"
-                            :class="{'msg-sent': message.status==='sent'}">
+                            <div class="chat font-mid">
+                                
+                                <div v-for="message in activeUser.messages"
+                                :class="[{'msg-sent': message.status==='sent'}, {'msg-rec': message.status==='received'}]">
                                 {{message.message}}
-                                <!-- <div class="row">
-                                    <div class="col-6"></div>
-                                    <div class="col-6 msg-sent">
-                                        Hai portato a spasso il cane?
-                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6"></div>
-                                    <div class="col-6 msg-sent">
-                                        Ricordati di stendere i panni!
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 msg-rec">Tutto fatto!</div>
-                                    <div class="col-6"></div>
-                                </div> -->
                             </div>
                             <div class="flex-between padding-bar">
                                 <div><i class="fa-solid fa-face-smile"></i></div>
