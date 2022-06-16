@@ -58,9 +58,6 @@
 .chat {
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 50px;
 }
 
 .navbar {
