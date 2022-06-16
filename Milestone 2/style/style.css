@@ -114,6 +114,10 @@
     padding: 10px;
 }
 
+.contact-list:hover {
+    background-color: lightgrey;
+}
+
 .msg-sent {
     background-color: #d5f9ba;
     margin: 10px 0;
