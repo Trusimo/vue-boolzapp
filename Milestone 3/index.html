@@ -90,7 +90,8 @@
                             </div>
                             <div class="flex-between padding-bar">
                                 <div><i class="fa-solid fa-face-smile"></i></div>
-                                <input type="text" class="message-bar" placeholder="Scrivi un messaggio">
+                                <input type="text" class="message-bar" placeholder="Scrivi un messaggio"
+                                v-model="myMsg" @keyup.enter="addMyMsg">
                                 <div><i class="fa-solid fa-microphone"></i></div>
                             </div>
                         </div>
